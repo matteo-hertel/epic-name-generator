@@ -1,9 +1,9 @@
-import type { TypographySize, Color } from "./types";
+import type { TextSize, Color } from "./types";
 
 export type TextProps = {
   children: string;
   color?: Color;
-  size?: TypographySize;
+  size?: TextSize;
   align?: "left" | "center" | "right";
   isBold?: boolean;
 };

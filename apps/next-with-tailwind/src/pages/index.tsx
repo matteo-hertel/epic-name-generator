@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Button } from "ui-tailwind";
+import { Block, Button, Text, Layout } from "ui-tailwind";
 import { uniqueNamesGenerator } from "unique-names-generator";
 import { config } from "../utils/config";
 import { useState } from "react";
@@ -15,12 +15,17 @@ export default function Home() {
         <meta name="description" content="Generate epic names with magic" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className="m-10 flex flex-col justify-center items-center">
-        <h1>Epic Name Generator</h1>
-        <Button onClick={generateName} text="🪄" />
-        <h2 className="text-4xl text-red-600 font-medium">{name}</h2>
-      </div>
+      <Layout align="center" justify="center">
+        <Text size="5xl" align="center">
+          Epic Name Generator
+        </Text>
+        <Block margin={10} />
+        <Button onClick={generateName}>🪄</Button>
+        <Block margin={6} />
+        <Text size="4xl" align="center">
+          {name}
+        </Text>
+      </Layout>
     </div>
   );
 }

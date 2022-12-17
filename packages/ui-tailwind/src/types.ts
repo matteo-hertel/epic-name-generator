@@ -1,4 +1,4 @@
-export type TypographySize =
+export type TextSize =
   | "xs"
   | "sm"
   | "base"
