@@ -1,4 +1,4 @@
-import type { TextSize, Color } from "./types";
+import type { TextSize, Color } from "../types";
 
 export type TextProps = {
   children: string;
